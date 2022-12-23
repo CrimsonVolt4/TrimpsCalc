@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script src="code.js"></script>
+    <script src="main.js"></script>
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -9,7 +9,19 @@
     </head>
     <body>
         <main>
-            <hl>Hello World</hl>
+            <input type="text" name=savefile required>
+            <span>Paste Save File</span><br/>
+
+            <p>Input</br>
+                <input type="text" id="input"/>
+                  <input type="checkbox" id="clipboard" checked>
+                  <label for = "clipboard">Copy output to clipboard</label>
+                  </br>
+                  <button id="encode">Encode</button>
+                  <button id="decode">Decode</button>
+                </p>
+                
+                <p id="output">Output </br></p>
         </main>
     </body>
 </html>
