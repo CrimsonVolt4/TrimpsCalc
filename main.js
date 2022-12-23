@@ -12,13 +12,13 @@ encode.onclick = function() {
     
 decode.onclick = function() {
 // Takes a Base64-encoded, LZ-compressed string and converts to plaintext.
-  var $str = LZString.decompressFromBase64(input.value)
+  var $str = LZString.decompressFromBase64(input.value);
   display($str);
 }
 
 function display(value)
 {
-  //Displays the output, and copies it to the clipboard if the option is checked.
+  // Displays the output, and copies it to the clipboard if the option is checked.
   output.innerHTML = value;
   if (clipboard.checked)
   {
